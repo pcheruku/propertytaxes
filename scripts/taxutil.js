@@ -2,12 +2,21 @@ function calculateTaxes(){
 	var propertyValue = document.getElementById('assessedText').value;
 	if(propertyValue){
 		propertyValue = parseInt(propertyValue.replace(",", ""));
+		var wfMelloRoos = 198.24;
+		var fpaMelloRoos = 1019.14;
+		var whillMelloRoos = 45.52;
+		var mranchMelloRoos = 2869.42;
+		var totalMelloRoos = 4132.32;
 		var countyTaxRate = document.getElementById('countyTaxRate').innerHTML;
 		var fcImp3TaxRate = document.getElementById('fcImp3TaxRate').innerHTML;
 		var fcImp2TaxRate = document.getElementById('fcImp2TaxRate').innerHTML;
 		var losRiosTaxRate = document.getElementById('losRiosTaxRate').innerHTML;
 		var totalTaxOnlyRate = document.getElementById('totalTaxOnlyRate').innerHTML;
-		var totalMelloRoos = document.getElementById('totalMelloRoos').innerHTML.replace(",", "").replace("$", "");
+		document.getElementById('wfMelloRoos').innerHTML = getValue(wfMelloRoos);
+		document.getElementById('fpaMelloRoos').innerHTML = getValue(fpaMelloRoos);
+		document.getElementById('whillMelloRoos').innerHTML = getValue(whillMelloRoos);
+		document.getElementById('mranchMelloRoos').innerHTML = getValue(mranchMelloRoos);
+		document.getElementById('totalMelloRoos').innerHTML = getValue(totalMelloRoos);
 		document.getElementById('countyTax').innerHTML = getValue(countyTaxRate * propertyValue/100);
 		document.getElementById('fcImp3Tax').innerHTML = getValue(fcImp3TaxRate * propertyValue/100);
 		document.getElementById('fcImp2Tax').innerHTML = getValue(fcImp2TaxRate * propertyValue/100);
