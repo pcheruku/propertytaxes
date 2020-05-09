@@ -17,8 +17,9 @@ function calculateTaxes(){
 		document.getElementById('totalAnnualTax').innerHTML = getValue(totalTaxOnly * 1 + totalMelloRoos * 1);
 		document.getElementById('installment1').innerHTML = getValue((totalTaxOnly * 1 + totalMelloRoos * 1)/2);
 		document.getElementById('installment2').innerHTML = getValue((totalTaxOnly * 1 + totalMelloRoos * 1)/2);
-		document.getElementById('monthlyMelloross').innerHTML = getValue(totalMelloRoos/12);
-		document.getElementById('monthlyTax').innerHTML = getValue(totalTaxOnly/12);				
+		document.getElementById('monthlyMelloroos').innerHTML = getValue(totalMelloRoos/12);
+		document.getElementById('monthlyTax').innerHTML = getValue(totalTaxOnly/12);
+		document.getElementById('taxAndMellorossMonthly').innerHTML = getValue(totalTaxOnly/12 + totalMelloRoos/12);		
 	}
 	else {
 		alert('Enter property value');
