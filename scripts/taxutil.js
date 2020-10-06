@@ -2,11 +2,11 @@ function calculateTaxes(){
 	var propertyValue = document.getElementById('assessedText').value;
 	if(propertyValue){
 		propertyValue = parseInt(propertyValue.replace(",", ""));
-		var wfMelloRoos = 198.24;
-		var fpaMelloRoos = 1019.14;
-		var whillMelloRoos = 45.52;
-		var mranchMelloRoos = 2869.42;
-		var totalMelloRoos = 4132.32;
+		var wfMelloRoos = 1.50;
+		var fpaMelloRoos = 1037.72;
+		var whillMelloRoos = 80.62;
+		var mranchMelloRoos = 2925.98;
+		var totalMelloRoos = 4045.82;
 		var countyTaxRate = document.getElementById('countyTaxRate').innerHTML;
 		var fcImp3TaxRate = document.getElementById('fcImp3TaxRate').innerHTML;
 		var fcImp2TaxRate = document.getElementById('fcImp2TaxRate').innerHTML;
